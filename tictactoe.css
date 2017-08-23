@@ -4,14 +4,14 @@
 					height: 100%;
 					flex-direction: column;
 					justify-content: center;
-					background-color: black;
+					background-color: #17f200;
 }
 .child{
 			display: flex;
 			justify-content: center;
 			/*width:100px;
 			height: 100px;*/
-			background-color: white;
+			background-color: black;
 }
 .canvasdimensions{
 				width:33px;

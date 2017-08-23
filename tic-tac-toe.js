@@ -3,6 +3,7 @@
  		function onClick(id1,i,j)
  		{
  			if(document.getElementById(id1).hasAttribute('disabled')==false)
+ 			{
  			if(count==0)
  			{
  			drawX(id1,i,j);
@@ -14,6 +15,7 @@
  				
  				count=0;
  			}
+ 		}
  		}
 function drawX(id1,i,j)
 {

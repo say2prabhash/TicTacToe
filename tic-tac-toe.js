@@ -1,4 +1,3 @@
-<script>
  		var count=0;
  		var arr=[[0,0,0],[0,0,0],[0,0,0]];
  		function onClick(id1,i,j)
@@ -96,4 +95,3 @@ function drawO(id1,i,j)
 				alert("Player2 won");
 			}
 	}
-	</script>

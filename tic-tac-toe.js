@@ -91,6 +91,7 @@ function drawO(id1,i,j)
 			if((flag==3 || flag1==3 || flag2==3 || flag3==3) && element=="x")
 			{
 				alert("Player1 won");
+				document.history.go(0);
 			}
 			if((flag==3 || flag1==3 || flag2==3 || flag3==3) && element=="o")
 			{

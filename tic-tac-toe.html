@@ -6,23 +6,23 @@
 	<script src="tic-tac-toe.js"></script>
 </head>
 <body>
-	<div class="parent-container">
-	<div class="child"><p style="color: chartreuse;">TicTacToe Game</p></div>
-		<div class="child">
-			<canvas id="Canvas1" onclick="onClick(id,0,0)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas2" onclick="onClick(id,0,1)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas3" onclick="onClick(id,0,2)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas></div>
-			<div class="child">
-				<canvas id="Canvas4" onclick="onClick(id,1,0)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas5" onclick="onClick(id,1,1)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas6" onclick="onClick(id,1,2)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			</div>
-			<div class="child">
-				<canvas id="Canvas7" onclick="onClick(id,2,0)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas8" onclick="onClick(id,2,1)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas>
-			<canvas id="Canvas9" onclick="onClick(id,2,2)" width="33" height="33" style="border:1px solid #000000; background-color: wheat;"></canvas></div>
-			<input type="button" width="100px" value = "Refresh" onclick="history.go(0)" />
-			</div>
-	</div>
-</body>
+	<div id="main-container">
+		<div class="parent-container">
+			<div id="cell1" class="child" onclick="onClick(id,0,0)"></div>
+			<div id="cell2" class="child" onclick="onClick(id,0,1)"></div>
+			<div id="cell3" class="child" onclick="onClick(id,0,2)"></div>
+		</div>
+		<div class="parent-container">
+			<div id="cell4" class="child" onclick="onClick(id,1,0)"></div>
+			<div id="cell5" class="child" onclick="onClick(id,1,1)"></div>
+			<div id="cell6" class="child" onclick="onClick(id,1,2)"></div>
+		</div>
+		<div class="parent-container">
+		<div id="cell7" class="child" onclick="onClick(id,2,0)"></div>
+		<div id="cell8" class="child" onclick="onClick(id,2,1)"></div>
+		<div id="cell9" class="child" onclick="onClick(id,2,2)"></div>
+		</div>
+		<input type="button" width="100px" value = "Refresh" onclick="history.go(0)" />
+		</div>
+	</body>
 </html>

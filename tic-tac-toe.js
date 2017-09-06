@@ -19,22 +19,16 @@
  		}
 function drawX(id1,i,j)
 {
-			var ctx=document.getElementById(id1).getContext("2d");
-			ctx.moveTo(5,5);
-			ctx.lineTo(27,27);
-			ctx.moveTo(27,5);
-			ctx.lineTo(5,27);
-			ctx.stroke();	
-			document.getElementById(id1).setAttribute('disabled',true);
-			win("x",i,j);	
+			var flexid=id1;
+			flexid="#"+flexid;	
+			$(flexid).append("<img src=\"cross.png\"></img>");
+			win("x",i,j);
 		}
 function drawO(id1,i,j)
 {
-			var ctx=document.getElementById(id1).getContext("2d");
-			ctx.beginPath();
-			ctx.arc(15,15,7,0,2*Math.PI);
-			ctx.stroke();
-			document.getElementById(id1).setAttribute('disabled',true);
+			var flexid=id1;
+			flexid="#"+flexid;
+			$(flexid).append("<img src=\"circle.png\"></img>");	
 			win("o",i,j);	
 		}
 		function win(element,i,j)
@@ -91,10 +85,11 @@ function drawO(id1,i,j)
 			if((flag==3 || flag1==3 || flag2==3 || flag3==3) && element=="x")
 			{
 				alert("Player1 won");
-				document.history.go(0);
+				location.reload();
 			}
 			if((flag==3 || flag1==3 || flag2==3 || flag3==3) && element=="o")
 			{
 				alert("Player2 won");
+				location.reload();
 			}
 	}
